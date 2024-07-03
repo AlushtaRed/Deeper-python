@@ -16,4 +16,4 @@ def print_text(text):
         print(f'{a}.{b:>{len_max+1}}')
 
 
-print_text('а я иду шагаю по москве')
+# print_text('а я иду шагаю по москве')

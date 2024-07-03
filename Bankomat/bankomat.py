@@ -81,9 +81,11 @@ def exit():
         operations.append(f'Возьмите карту на которой {bank_account} у.е.')
 
 
-deposit(173)
-withdraw(21)
-exit()
+
+if __name__ == '__main__':
+    deposit(173)
+    withdraw(21)
+    exit()
 
 print(operations)
 # print(bank_account)
