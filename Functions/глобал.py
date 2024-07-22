@@ -9,6 +9,7 @@ s = 'zxcv'
 apples = 25
 codes = 10110110
 
+
 def func():
     temp_dict = {}
     for i in globals():

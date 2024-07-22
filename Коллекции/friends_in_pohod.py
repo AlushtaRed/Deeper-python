@@ -24,7 +24,7 @@ result = []
 for value in hike.values():
     result += list(value)
     
-print(result)
+# print(result)
 for i in result:
     if result.count(i) == 1:
         print(i, ' взял только один из друзей')
