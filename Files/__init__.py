@@ -1,4 +1,4 @@
-from zapolnenie_file import filing_in_file
-from gen_names import name_generate
+from dz_1 import rename_files
 
-__all_ = ['filing_in_file', 'name_generate']
+
+__all_ = ['rename_files']

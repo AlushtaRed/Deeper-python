@@ -22,4 +22,4 @@ def create_file(extention, min_len=6, max_len=30, min_bytes=256, max_bytes=4096,
         with open(f'{name}.{extention}', 'wb') as f:
             f.write(randbytes(randint(min_bytes,max_bytes)))
 
-# create_file(extention='txt')
+create_file(extention='txt')

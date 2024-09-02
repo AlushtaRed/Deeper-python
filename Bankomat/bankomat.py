@@ -83,8 +83,8 @@ def exit():
 
 
 if __name__ == '__main__':
-    deposit(173)
-    withdraw(21)
+    deposit(5000)
+    withdraw(100)
     exit()
 
 print(operations)

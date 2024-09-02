@@ -9,19 +9,25 @@
 #          [4, 5, 6], 
 #          [7, 8, 9]]
 def transpose(matrix):
-    transposed_matrix =  [[0 for i in range (len(matrix))] for j in range (len(matrix))]
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            transposed_matrix[i][j] = matrix[j][i]
-            # print(i,j)
-    return transposed_matrix
+    # определяем количество строк и столбцов в матрице
+    rows = len(matrix)
+    cols = len(matrix[0])
 
+    # создаем новую матрицу с размерами, поменянными местами
+    transposed = [[0 for row in range(rows)] for col in range(cols)]
+
+    # заполняем новую матрицу значениями из старой матрицы
+    for row in range(rows):
+        for col in range(cols):
+            transposed[col][row] = matrix[row][col]
+
+    return transposed
 
 # print(matrix)
 # print(transpose([[1, 2, 3],
 #          [4, 5, 6], 
 #          [7, 8, 9]]))
 
-print(transpose(matrix = [[1, 2], [3, 4]]))
+print(transpose(matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]))
 # transposed_matrix=list(zip(matrix[0],matrix[1],matrix[2]))
 # print(transposed_matrix)

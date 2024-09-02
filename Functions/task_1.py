@@ -14,5 +14,5 @@ def sort_text(text: str):
     for index, word in enumerate(list_text, 1):
         print(f'{index}. {word:>{len(max_len)}}')
 
-
-sort_text(text)
+if __name__ == 'main':
+    sort_text(text)
